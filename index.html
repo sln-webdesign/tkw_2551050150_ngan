@@ -8,24 +8,30 @@
     <link rel="stylesheet" href="./dist/output.css">
 </head>
 
-<body>
+<body class="font-body text-ink bg-surface">
 
     <!-- Bỏ qua đến nội dung chính -->
     <a href="#main">Bỏ qua đến nội dung chính</a>
 
     <!-- 1. NAVBAR -->
-    <header>
-        <nav aria-label="Điều hướng chính">
-            <a href="#">Logo</a>
+    <header class="border-b border-line bg-surface">
+        <nav class="section flex items-center justify-between py-5"
+             aria-label="Điều hướng chính">
+            <a href="#" class="font-display text-2xl font-bold text-brand-600">TKW</a>
 
-            <ul>
-                <li><a href="#features">Tính năng</a></li>
-                <li><a href="#stats">Số liệu</a></li>
-                <li><a href="#pricing">Bảng giá</a></li>
-                <li><a href="#faq">FAQ</a></li>
+            <ul  class="hidden items-center gap-8 lg:flex">
+                <li><a href="#features" 
+                       class="text-muted hover:text-brand-600">Tính năng</a></li>
+                <li><a href="#stats" 
+                       class="text-muted hover:text-brand-600">Số liệu</a></li>
+                <li><a href="#pricing" 
+                       class="text-muted hover:text-brand-600">Bảng giá</a></li>
+                <li><a href="#faq" 
+                       class="text-muted hover:text-brand-600">FAQ</a></li>
             </ul>
 
-            <a href="#cta">Bắt đầu</a>
+            <a href="#cta"
+               class="rounded-card bg-brand-600 px-4 py-2 text-white hover:bg-accent-500">Bắt đầu</a>
         </nav>
     </header>
 
@@ -33,38 +39,58 @@
     <main id="main">
 
         <!-- 2. HERO -->
-        <section aria-labelledby="hero-title">
+<section
+    class="section grid items-center gap-14 lg:grid-cols-2 lg:gap-16"
+    aria-labelledby="hero-title"
+>
 
-            <h1 id="hero-title">
-                Xây dựng sản phẩm số tốt hơn
-            </h1>
+    <div>
+        <p class="mb-4 font-semibold text-accent-500">
+            GIẢI PHÁP CHO DOANH NGHIỆP
+        </p>
 
-            <p>
-                Giải pháp giúp bạn quản lý và phát triển công việc hiệu quả hơn.
+        <h1
+            id="hero-title"
+            class="font-display text-5xl font-bold leading-tight text-brand-600"
+        >
+            Xây dựng sản phẩm số tốt hơn
+        </h1>
+
+        <p class="mt-6 max-w-xl text-lg leading-8 text-muted">
+            Giải pháp giúp bạn quản lý và phát triển công việc hiệu quả hơn.
+        </p>
+
+        <div class="mt-8 flex flex-wrap gap-4">
+            <a
+                href="#cta"
+                class="rounded-card bg-brand-600 px-5 py-3 font-semibold text-white hover:bg-accent-500"
+            >
+                Bắt đầu ngay
+            </a>
+
+            <a
+                href="#features"
+                class="rounded-card border border-line px-5 py-3 font-semibold text-brand-600"
+            >
+                Xem tính năng
+            </a>
+        </div>
+    </div>
+
+    <div>
+        <div class="rounded-card border border-line bg-white p-8">
+            <p class="font-display text-2xl font-bold text-brand-600">
+                TKW
             </p>
 
-            <a href="#cta">Bắt đầu ngay</a>
+            <p class="mt-4 text-muted">
+                Nền tảng hỗ trợ doanh nghiệp quản lý công việc và phát triển
+                sản phẩm số.
+            </p>
+        </div>
+    </div>
 
-        </section>
-
-
-        <!-- 3. CUSTOMER LOGOS -->
-        <section aria-labelledby="customers-title">
-
-            <h2 id="customers-title">
-                Được tin dùng bởi các doanh nghiệp
-            </h2>
-
-            <ul>
-                <li>Google</li>
-                <li>Microsoft</li>
-                <li>Spotify</li>
-                <li>Uber</li>
-            </ul>
-
-        </section>
-
-
+</section>
         <!-- 4. FEATURES -->
         <section id="features" aria-labelledby="features-title">
 
