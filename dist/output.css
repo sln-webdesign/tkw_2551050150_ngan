@@ -23,12 +23,12 @@
     --leading-tight: 1.25;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --color-brand-600: #004b79;
-    --color-accent-500: #0087d2;
+    --color-brand-600: #021e30;
+    --color-accent-500: #409dcf;
     --color-ink: #000000;
-    --color-muted: #848a8c;
+    --color-muted: #3c3c3c;
     --color-surface: #f0f0f0;
-    --color-line: #d0006f;
+    --color-line: #56022f;
     --font-display: "Times New Roman", system-ui, sans-serif;
     --font-body: "Inter", system-ui, sans-serif;
     --radius-card: 16px;
