@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TKW</title>
+    <title>MoneyTrack - Quản lý chi tiêu cá nhân</title>
 
     <link rel="stylesheet" href="./dist/output.css">
 </head>
@@ -15,23 +15,49 @@
 
     <!-- 1. NAVBAR -->
     <header class="border-b border-line bg-surface">
-        <nav class="section flex items-center justify-between py-5"
-             aria-label="Điều hướng chính">
-            <a href="#" class="font-display text-2xl font-bold text-brand-600">TKW</a>
+        <nav
+            class="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-5"
+            aria-label="Điều hướng chính"
+        >
+            <a
+                href="#"
+                class="font-display text-2xl font-bold text-brand-600"
+            >
+                MoneyTrack
+            </a>
 
-            <ul  class="hidden items-center gap-8 lg:flex">
-                <li><a href="#features" 
-                       class="text-muted hover:text-brand-600">Tính năng</a></li>
-                <li><a href="#stats" 
-                       class="text-muted hover:text-brand-600">Số liệu</a></li>
-                <li><a href="#pricing" 
-                       class="text-muted hover:text-brand-600">Bảng giá</a></li>
-                <li><a href="#faq" 
-                       class="text-muted hover:text-brand-600">FAQ</a></li>
+            <ul class="hidden items-center gap-8 lg:flex">
+                <li>
+                    <a href="#features" class="text-muted hover:text-brand-600">
+                        Tính năng
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#stats" class="text-muted hover:text-brand-600">
+                        Thống kê
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#pricing" class="text-muted hover:text-brand-600">
+                        Gói sử dụng
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#faq" class="text-muted hover:text-brand-600">
+                        FAQ
+                    </a>
+                </li>
             </ul>
 
-            <a href="#cta"
-               class="rounded-card bg-brand-600 px-4 py-2 text-white hover:bg-accent-500">Bắt đầu</a>
+            <a
+                href="#cta"
+                class="rounded-card bg-brand-600 px-4 py-2 text-white hover:bg-accent-500"
+            >
+                Bắt đầu
+            </a>
         </nav>
     </header>
 
@@ -39,224 +65,667 @@
     <main id="main">
 
         <!-- 2. HERO -->
-<section
-    class="section grid items-center gap-14 lg:grid-cols-2 lg:gap-16"
-    aria-labelledby="hero-title"
->
-
-    <div>
-        <p class="mb-4 font-semibold text-accent-500">
-            GIẢI PHÁP CHO DOANH NGHIỆP
-        </p>
-
-        <h1
-            id="hero-title"
-            class="font-display text-5xl font-bold leading-tight text-brand-600"
+        <section
+            class="mx-auto grid w-full max-w-6xl items-center gap-14 px-5 py-20 lg:grid-cols-2 lg:gap-16"
+            aria-labelledby="hero-title"
         >
-            Xây dựng sản phẩm số tốt hơn
-        </h1>
+            <div class="flex flex-col gap-6">
 
-        <p class="mt-6 max-w-xl text-lg leading-8 text-muted">
-            Giải pháp giúp bạn quản lý và phát triển công việc hiệu quả hơn.
-        </p>
+                <p class="font-semibold text-accent-500">
+                    QUẢN LÝ CHI TIÊU CÁ NHÂN
+                </p>
 
-        <div class="mt-8 flex flex-wrap gap-4">
-            <a
-                href="#cta"
-                class="rounded-card bg-brand-600 px-5 py-3 font-semibold text-white hover:bg-accent-500"
-            >
-                Bắt đầu ngay
-            </a>
+                <h1
+                    id="hero-title"
+                    class="font-display text-5xl font-bold leading-tight text-brand-600"
+                >
+                    Kiểm soát tiền bạc, làm chủ cuộc sống
+                </h1>
 
-            <a
-                href="#features"
-                class="rounded-card border border-line px-5 py-3 font-semibold text-brand-600"
-            >
-                Xem tính năng
-            </a>
-        </div>
-    </div>
+                <p class="max-w-xl text-lg leading-8 text-muted">
+                    MoneyTrack giúp bạn theo dõi thu nhập, chi tiêu và ngân sách
+                    một cách đơn giản, trực quan và hiệu quả.
+                </p>
 
-    <div>
-        <div class="rounded-card border border-line bg-white p-8">
-            <p class="font-display text-2xl font-bold text-brand-600">
-                TKW
-            </p>
+                <div class="flex flex-wrap gap-4">
+                    <a
+                        href="#cta"
+                        class="rounded-card bg-brand-600 px-5 py-3 font-semibold text-white hover:bg-accent-500"
+                    >
+                        Bắt đầu quản lý
+                    </a>
 
-            <p class="mt-4 text-muted">
-                Nền tảng hỗ trợ doanh nghiệp quản lý công việc và phát triển
-                sản phẩm số.
-            </p>
-        </div>
-    </div>
+                    <a
+                        href="#features"
+                        class="rounded-card border border-line px-5 py-3 font-semibold text-brand-600"
+                    >
+                        Xem tính năng
+                    </a>
+                </div>
 
-</section>
+            </div>
+
+
+            <!-- Tổng quan tài chính -->
+            <div>
+                <div class="rounded-card border border-line bg-white p-8">
+
+                    <div class="flex flex-col gap-6">
+
+                        <div class="flex items-center justify-between">
+                            <p class="font-display text-xl font-bold text-brand-600">
+                                Tổng quan tài chính
+                            </p>
+
+                            <span class="rounded-card bg-brand-50 px-3 py-1 text-sm text-brand-600">
+                                Tháng này
+                            </span>
+                        </div>
+
+                        <div>
+                            <p class="text-sm text-muted">
+                                Số dư hiện tại
+                            </p>
+
+                            <p class="font-display text-4xl font-extrabold text-brand-600">
+                                12.500.000 ₫
+                            </p>
+                        </div>
+
+                        <div class="grid gap-4 sm:grid-cols-2">
+
+                            <div class="rounded-card bg-surface p-4">
+                                <p class="text-sm text-muted">
+                                    Thu nhập
+                                </p>
+
+                                <p class="mt-2 font-bold text-brand-600">
+                                    +15.000.000 ₫
+                                </p>
+                            </div>
+
+                            <div class="rounded-card bg-surface p-4">
+                                <p class="text-sm text-muted">
+                                    Chi tiêu
+                                </p>
+
+                                <p class="mt-2 font-bold text-accent-500">
+                                    -2.500.000 ₫
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- 3. LOGO / NGƯỜI DÙNG -->
+        <section
+            class="mx-auto w-full max-w-6xl px-5 py-20"
+            aria-labelledby="trusted-title"
+        >
+            <div class="flex flex-col gap-6">
+
+                <h2
+                    id="trusted-title"
+                    class="text-center text-sm font-semibold text-muted"
+                >
+                    Được lựa chọn bởi những người muốn quản lý tài chính tốt hơn
+                </h2>
+
+                <ul class="flex flex-wrap items-center justify-center gap-x-12 gap-y-6">
+                    <li class="font-display text-lg font-bold text-brand-600">
+                        Sinh viên
+                    </li>
+
+                    <li class="font-display text-lg font-bold text-brand-600">
+                        Freelancer
+                    </li>
+
+                    <li class="font-display text-lg font-bold text-brand-600">
+                        Nhân viên văn phòng
+                    </li>
+
+                    <li class="font-display text-lg font-bold text-brand-600">
+                        Gia đình trẻ
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+
         <!-- 4. FEATURES -->
-        <section id="features" aria-labelledby="features-title">
+        <section
+            id="features"
+            class="mx-auto w-full max-w-6xl px-5 py-20"
+            aria-labelledby="features-title"
+        >
+            <div class="flex flex-col gap-4">
 
-            <h2 id="features-title">
-                Công cụ bạn cần để phát triển
-            </h2>
+                <h2
+                    id="features-title"
+                    class="font-display text-3xl font-bold text-brand-600"
+                >
+                    Mọi thứ bạn cần để quản lý chi tiêu
+                </h2>
 
-            <ul>
+                <p class="max-w-2xl text-muted">
+                    Theo dõi dòng tiền, kiểm soát ngân sách và hiểu rõ hơn
+                    về thói quen chi tiêu của bạn.
+                </p>
 
-                <li>
-                    <h3>Quản lý dễ dàng</h3>
-                    <p>
-                        Theo dõi công việc và dữ liệu tại một nơi.
+            </div>
+
+
+            <ul class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+                <li class="flex flex-col gap-4 rounded-card border border-line bg-white p-6">
+
+                    <span class="grid h-11 w-11 place-items-center rounded-lg bg-brand-50 text-brand-600">
+                        <svg
+                            class="h-6 w-6"
+                            aria-hidden="true"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </span>
+
+                    <h3 class="font-display text-xl font-bold text-brand-600">
+                        Theo dõi chi tiêu
+                    </h3>
+
+                    <p class="text-muted">
+                        Ghi lại các khoản chi tiêu hằng ngày và phân loại
+                        theo nhu cầu của bạn.
                     </p>
+
                 </li>
 
-                <li>
-                    <h3>Phân tích thông minh</h3>
-                    <p>
-                        Nắm bắt thông tin quan trọng để đưa ra quyết định.
+
+                <li class="flex flex-col gap-4 rounded-card border border-line bg-white p-6">
+
+                    <span class="grid h-11 w-11 place-items-center rounded-lg bg-brand-50 text-brand-600">
+                        <svg
+                            class="h-6 w-6"
+                            aria-hidden="true"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path d="M4 19V5M4 19h16"/>
+                            <path d="m8 15 3-3 3 2 5-6"/>
+                        </svg>
+                    </span>
+
+                    <h3 class="font-display text-xl font-bold text-brand-600">
+                        Phân tích tài chính
+                    </h3>
+
+                    <p class="text-muted">
+                        Xem báo cáo trực quan để hiểu tiền của bạn đang
+                        được sử dụng như thế nào.
                     </p>
+
                 </li>
 
-                <li>
-                    <h3>Làm việc hiệu quả</h3>
-                    <p>
-                        Tối ưu quy trình và tiết kiệm thời gian.
+
+                <li class="flex flex-col gap-4 rounded-card border border-line bg-white p-6">
+
+                    <span class="grid h-11 w-11 place-items-center rounded-lg bg-brand-50 text-brand-600">
+                        <svg
+                            class="h-6 w-6"
+                            aria-hidden="true"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path d="M5 12h14"/>
+                            <path d="m13 6 6 6-6 6"/>
+                        </svg>
+                    </span>
+
+                    <h3 class="font-display text-xl font-bold text-brand-600">
+                        Quản lý ngân sách
+                    </h3>
+
+                    <p class="text-muted">
+                        Đặt giới hạn chi tiêu cho từng danh mục và kiểm soát
+                        ngân sách mỗi tháng.
                     </p>
+
                 </li>
 
             </ul>
-
         </section>
 
 
         <!-- 5. STATS -->
-        <section id="stats" aria-labelledby="stats-title">
+        <section
+            id="stats"
+            class="mx-auto w-full max-w-6xl px-5 py-20"
+            aria-labelledby="stats-title"
+        >
+            <div class="flex flex-col gap-10">
 
-            <h2 id="stats-title">
-                Những con số nổi bật
-            </h2>
+                <div class="flex flex-col gap-4">
+                    <h2
+                        id="stats-title"
+                        class="font-display text-3xl font-bold text-brand-600"
+                    >
+                        Tổng quan tài chính của bạn
+                    </h2>
 
-            <ul>
+                    <p class="text-muted">
+                        Những con số giúp bạn hiểu rõ tình hình tài chính hiện tại.
+                    </p>
+                </div>
 
-                <li>
-                    <strong>600M+</strong>
-                    <span>Người dùng</span>
-                </li>
 
-                <li>
-                    <strong>99.9%</strong>
-                    <span>Thời gian hoạt động</span>
-                </li>
+                <dl class="grid divide-y divide-line sm:grid-cols-2 sm:divide-x sm:divide-y-0 lg:grid-cols-4">
 
-                <li>
-                    <strong>100+</strong>
-                    <span>Quốc gia</span>
-                </li>
+                    <div class="flex flex-col items-center p-6 text-center">
+                        <dt class="order-2 mt-2 text-sm text-muted">
+                            Số dư hiện tại
+                        </dt>
 
-            </ul>
+                        <dd class="font-display text-4xl font-extrabold text-brand-600">
+                            12.5M
+                        </dd>
+                    </div>
 
+
+                    <div class="flex flex-col items-center p-6 text-center">
+                        <dt class="order-2 mt-2 text-sm text-muted">
+                            Thu nhập tháng
+                        </dt>
+
+                        <dd class="font-display text-4xl font-extrabold text-brand-600">
+                            15M
+                        </dd>
+                    </div>
+
+
+                    <div class="flex flex-col items-center p-6 text-center">
+                        <dt class="order-2 mt-2 text-sm text-muted">
+                            Chi tiêu tháng
+                        </dt>
+
+                        <dd class="font-display text-4xl font-extrabold text-brand-600">
+                            2.5M
+                        </dd>
+                    </div>
+
+
+                    <div class="flex flex-col items-center p-6 text-center">
+                        <dt class="order-2 mt-2 text-sm text-muted">
+                            Ngân sách còn lại
+                        </dt>
+
+                        <dd class="font-display text-4xl font-extrabold text-brand-600">
+                            65%
+                        </dd>
+                    </div>
+
+                </dl>
+
+            </div>
         </section>
 
 
-        <!-- 6. TESTIMONIALS -->
-        <section aria-labelledby="testimonials-title">
+        <!-- 6. TESTIMONIAL -->
+        <section
+            class="mx-auto w-full max-w-6xl px-5 py-20"
+            aria-labelledby="testimonials-title"
+        >
+            <div class="flex flex-col gap-8">
 
-            <h2 id="testimonials-title">
-                Khách hàng nói gì?
-            </h2>
+                <h2
+                    id="testimonials-title"
+                    class="font-display text-3xl font-bold text-brand-600"
+                >
+                    Người dùng nói gì?
+                </h2>
 
-            <blockquote>
-                <p>
-                    Đây là một giải pháp đơn giản và hiệu quả cho công việc của chúng tôi.
-                </p>
+                <figure class="rounded-card border border-line bg-white p-8">
 
-                <footer>
-                    — Khách hàng
-                </footer>
-            </blockquote>
+                    <blockquote class="text-xl leading-8 text-muted">
+                        “Trước đây mình thường không biết tiền đã tiêu vào đâu.
+                        Từ khi dùng MoneyTrack, mình có thể theo dõi từng khoản
+                        chi và kiểm soát ngân sách dễ dàng hơn.”
+                    </blockquote>
 
+                    <figcaption class="mt-6 flex flex-col gap-1">
+                        <span class="font-semibold text-brand-600">
+                            Nguyễn Minh Anh
+                        </span>
+
+                        <cite class="text-sm text-muted">
+                            Sinh viên
+                        </cite>
+                    </figcaption>
+
+                </figure>
+
+            </div>
         </section>
 
 
         <!-- 7. PRICING -->
-        <section id="pricing" aria-labelledby="pricing-title">
+        <section
+            id="pricing"
+            class="mx-auto w-full max-w-6xl px-5 py-20"
+            aria-labelledby="pricing-title"
+        >
+            <div class="flex flex-col gap-4">
 
-            <h2 id="pricing-title">
-                Chọn gói phù hợp với bạn
-            </h2>
+                <h2
+                    id="pricing-title"
+                    class="font-display text-3xl font-bold text-brand-600"
+                >
+                    Chọn gói phù hợp với bạn
+                </h2>
 
-            <ul>
+                <p class="text-muted">
+                    Bắt đầu miễn phí và nâng cấp khi bạn cần nhiều tính năng hơn.
+                </p>
 
-                <li>
-                    <h3>Starter</h3>
-                    <p>$49 / tháng</p>
-                    <a href="#cta">Bắt đầu</a>
+            </div>
+
+
+            <ul class="mt-14 grid items-stretch gap-6 lg:grid-cols-3">
+
+                <!-- FREE -->
+                <li class="flex h-full flex-col rounded-card border border-line bg-white p-6">
+
+                    <div class="flex flex-col gap-4">
+                        <h3 class="font-display text-xl font-bold text-brand-600">
+                            Free
+                        </h3>
+
+                        <p class="font-display text-3xl font-extrabold text-brand-600">
+                            0 ₫
+                            <span class="text-sm font-normal text-muted">
+                                / tháng
+                            </span>
+                        </p>
+
+                        <ul class="flex flex-col gap-3 text-muted">
+                            <li>✓ Theo dõi chi tiêu</li>
+                            <li>✓ 3 danh mục</li>
+                            <li>✓ Báo cáo cơ bản</li>
+                        </ul>
+                    </div>
+
+                    <a
+                        href="#cta"
+                        class="mt-auto rounded-card border border-line px-5 py-3 text-center font-semibold text-brand-600"
+                    >
+                        Bắt đầu
+                    </a>
+
                 </li>
 
-                <li>
-                    <h3>Company</h3>
-                    <p>$99 / tháng</p>
-                    <a href="#cta">Bắt đầu</a>
+
+                <!-- PLUS -->
+                <li class="relative flex h-full flex-col rounded-card border border-line bg-white p-6 ring-2 ring-brand-600">
+
+                    <span class="absolute -top-3 left-6 rounded-card bg-brand-600 px-3 py-1 text-sm text-white">
+                        Được chọn nhiều nhất
+                    </span>
+
+                    <div class="flex flex-col gap-4">
+                        <h3 class="font-display text-xl font-bold text-brand-600">
+                            Plus
+                        </h3>
+
+                        <p class="font-display text-3xl font-extrabold text-brand-600">
+                            49.000 ₫
+                            <span class="text-sm font-normal text-muted">
+                                / tháng
+                            </span>
+                        </p>
+
+                        <ul class="flex flex-col gap-3 text-muted">
+                            <li>✓ Không giới hạn danh mục</li>
+                            <li>✓ Báo cáo nâng cao</li>
+                            <li>✓ Quản lý ngân sách</li>
+                            <li>✓ Theo dõi mục tiêu</li>
+                        </ul>
+                    </div>
+
+                    <a
+                        href="#cta"
+                        class="mt-auto rounded-card bg-brand-600 px-5 py-3 text-center font-semibold text-white"
+                    >
+                        Chọn gói này
+                    </a>
+
                 </li>
 
-                <li>
-                    <h3>Enterprise</h3>
-                    <p>$499 / tháng</p>
-                    <a href="#cta">Bắt đầu</a>
+
+                <!-- PREMIUM -->
+                <li class="flex h-full flex-col rounded-card border border-line bg-white p-6">
+
+                    <div class="flex flex-col gap-4">
+                        <h3 class="font-display text-xl font-bold text-brand-600">
+                            Premium
+                        </h3>
+
+                        <p class="font-display text-3xl font-extrabold text-brand-600">
+                            99.000 ₫
+                            <span class="text-sm font-normal text-muted">
+                                / tháng
+                            </span>
+                        </p>
+
+                        <ul class="flex flex-col gap-3 text-muted">
+                            <li>✓ Tất cả tính năng Plus</li>
+                            <li>✓ Phân tích chuyên sâu</li>
+                            <li>✓ Xuất báo cáo</li>
+                            <li>✓ Hỗ trợ ưu tiên</li>
+                        </ul>
+                    </div>
+
+                    <a
+                        href="#cta"
+                        class="mt-auto rounded-card border border-line px-5 py-3 text-center font-semibold text-brand-600"
+                    >
+                        Bắt đầu
+                    </a>
+
                 </li>
 
             </ul>
-
         </section>
 
 
         <!-- 8. FAQ -->
-        <section id="faq" aria-labelledby="faq-title">
+        <section
+            id="faq"
+            class="mx-auto w-full max-w-6xl px-5 py-20"
+            aria-labelledby="faq-title"
+        >
+            <div class="grid gap-12 lg:grid-cols-[1fr_1.4fr]">
 
-            <h2 id="faq-title">
-                Câu hỏi thường gặp
-            </h2>
+                <div class="flex flex-col gap-4">
+                    <h2
+                        id="faq-title"
+                        class="font-display text-3xl font-bold text-brand-600"
+                    >
+                        Câu hỏi thường gặp
+                    </h2>
 
-            <details>
-                <summary>Dịch vụ này dành cho ai?</summary>
-                <p>
-                    Dịch vụ dành cho các cá nhân và doanh nghiệp muốn quản lý công việc hiệu quả.
-                </p>
-            </details>
+                    <p class="text-muted">
+                        Một số câu hỏi bạn có thể quan tâm trước khi bắt đầu.
+                    </p>
+                </div>
 
-            <details>
-                <summary>Tôi có thể dùng thử không?</summary>
-                <p>
-                    Có, bạn có thể bắt đầu với gói phù hợp với nhu cầu của mình.
-                </p>
-            </details>
 
+                <div class="flex flex-col gap-4">
+
+                    <details class="rounded-card border border-line bg-white p-5">
+                        <summary class="cursor-pointer font-semibold text-brand-600">
+                            MoneyTrack dùng để làm gì?
+                        </summary>
+
+                        <p class="mt-4 text-muted">
+                            MoneyTrack giúp bạn ghi lại, phân loại và theo dõi
+                            các khoản thu chi cá nhân.
+                        </p>
+                    </details>
+
+
+                    <details class="rounded-card border border-line bg-white p-5">
+                        <summary class="cursor-pointer font-semibold text-brand-600">
+                            Có thể đặt ngân sách cho từng danh mục không?
+                        </summary>
+
+                        <p class="mt-4 text-muted">
+                            Có. Bạn có thể thiết lập ngân sách riêng cho ăn uống,
+                            mua sắm, đi lại và các nhu cầu khác.
+                        </p>
+                    </details>
+
+
+                    <details class="rounded-card border border-line bg-white p-5">
+                        <summary class="cursor-pointer font-semibold text-brand-600">
+                            Tôi có thể xem lại lịch sử chi tiêu không?
+                        </summary>
+
+                        <p class="mt-4 text-muted">
+                            Có. Các giao dịch được lưu lại để bạn có thể theo dõi
+                            và xem lại lịch sử chi tiêu.
+                        </p>
+                    </details>
+
+                </div>
+
+            </div>
         </section>
 
 
         <!-- 9. CTA -->
-        <section id="cta" aria-labelledby="cta-title">
+        <section
+            id="cta"
+            class="mx-auto w-full max-w-6xl px-5 py-20"
+            aria-labelledby="cta-title"
+        >
+            <div class="rounded-card bg-brand-600 px-8 py-12 text-center">
 
-            <h2 id="cta-title">
-                Sẵn sàng bắt đầu?
-            </h2>
+                <div class="mx-auto flex max-w-2xl flex-col items-center gap-6">
 
-            <p>
-                Bắt đầu sử dụng ngay hôm nay.
-            </p>
+                    <h2
+                        id="cta-title"
+                        class="font-display text-3xl font-bold text-white"
+                    >
+                        Sẵn sàng kiểm soát chi tiêu của bạn?
+                    </h2>
 
-            <a href="#">
-                Bắt đầu ngay
-            </a>
+                    <p class="text-white">
+                        Bắt đầu theo dõi thu chi và xây dựng thói quen tài chính
+                        tốt hơn ngay hôm nay.
+                    </p>
 
+                    <a
+                        href="#"
+                        class="rounded-card bg-white px-5 py-3 font-semibold text-brand-600"
+                    >
+                        Bắt đầu miễn phí
+                    </a>
+
+                </div>
+
+            </div>
         </section>
 
     </main>
 
 
     <!-- 10. FOOTER -->
-    <footer>
+    <footer class="border-t border-line bg-surface">
 
-        <p>
-            © 2026 TKW. All rights reserved.
-        </p>
+        <div class="mx-auto grid w-full max-w-6xl gap-10 px-5 py-20 sm:grid-cols-2 lg:grid-cols-4">
+
+            <div class="flex flex-col gap-4">
+                <p class="font-display text-2xl font-bold text-brand-600">
+                    MoneyTrack
+                </p>
+
+                <p class="text-muted">
+                    Quản lý chi tiêu đơn giản, sống chủ động hơn mỗi ngày.
+                </p>
+            </div>
+
+
+            <nav aria-labelledby="footer-product-title">
+                <div class="flex flex-col gap-4">
+                    <h2
+                        id="footer-product-title"
+                        class="font-semibold text-brand-600"
+                    >
+                        Sản phẩm
+                    </h2>
+
+                    <ul class="flex flex-col gap-3 text-muted">
+                        <li><a href="#features">Tính năng</a></li>
+                        <li><a href="#stats">Thống kê</a></li>
+                        <li><a href="#pricing">Gói sử dụng</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+
+            <nav aria-labelledby="footer-support-title">
+                <div class="flex flex-col gap-4">
+                    <h2
+                        id="footer-support-title"
+                        class="font-semibold text-brand-600"
+                    >
+                        Hỗ trợ
+                    </h2>
+
+                    <ul class="flex flex-col gap-3 text-muted">
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#">Trợ giúp</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+
+            <div class="flex flex-col gap-4">
+                <h2 class="font-semibold text-brand-600">
+                    Liên hệ
+                </h2>
+
+                <p class="text-muted">
+                    TP. Hồ Chí Minh
+                </p>
+
+                <p class="text-muted">
+                    support@moneytrack.vn
+                </p>
+            </div>
+
+        </div>
+
+        <div class="border-t border-line">
+            <p class="mx-auto w-full max-w-6xl px-5 py-6 text-sm text-muted">
+                © 2026 MoneyTrack. All rights reserved.
+            </p>
+        </div>
 
     </footer>
 
